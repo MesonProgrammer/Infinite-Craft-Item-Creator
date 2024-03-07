@@ -1,6 +1,7 @@
 import json, pyperclip
 
 print("Welcome to Infinite Craft Item Creator! MIT License (c) MesonProgrammer")
+print("WARNING: This program won't work if there is a (') in the text.")
 
 def end_program():
     input("[PROGRAM TERMINATED]")
@@ -31,4 +32,4 @@ else:
     end_program()
 
 input("Successful. Please enter to copy it to your clipboard.")
-pyperclip.copy(str(data).replace('False', 'false').replace('True', 'true').replace('\'', '"').replace(' ', ''))
+pyperclip.copy(str(data).replace('False', 'false').replace('True', 'true').replace('\'', '"').replace(': ', ':'))

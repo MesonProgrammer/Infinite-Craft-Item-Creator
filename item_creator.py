@@ -1,4 +1,8 @@
-import json, pyperclip
+try:
+    import pyperclip
+except ImportError:
+    print("Could not import pyperclip. Please install it using 'pip install pyperclip' and run the program again.")
+    quit()
 
 print("Welcome to Infinite Craft Item Creator! MIT License (c) MesonProgrammer")
 print("WARNING: This program won't work if there is a (') in the text.")
